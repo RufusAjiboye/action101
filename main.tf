@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "node1" {
-  ami           = "ami-00385a401487aefa4"
+  ami           = "vpc-053b46974baed7332"
   instance_type = "t2.micro"
   key_name      = "mykeys100"
 
