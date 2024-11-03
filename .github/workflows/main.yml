@@ -7,5 +7,5 @@ jobs:
         steps:
             - run: echo "Hello Everyone"
             - run: pwd
-            -run: ls
+            - run: ls
 
