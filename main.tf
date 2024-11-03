@@ -9,7 +9,7 @@ resource "aws_instance" "node1" {
   associate_public_ip_address = true
 
   tags = {
-    Name = "Git Actions in Action"
+    Name = "Git it Actions in Action"
   }
 }
 
