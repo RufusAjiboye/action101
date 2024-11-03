@@ -20,11 +20,11 @@ jobs:
               with:
                 terraform_version: 1.3.0
             
-            # - name: Terraform init
-            #   run: terraform init
+            - name: Terraform init
+              run: terraform init
 
-            # - name: Terraform plan
-            #   run: terraform plan
+            - name: Terraform plan
+              run: terraform plan
 
             - name: Terraform destroy
               run: terraform destroy --auto-approve
