@@ -6,7 +6,7 @@ resource "aws_instance" "node1" {
   instance_type               = "t2.micro"
   ami                         = "ami-00385a401487aefa4"
   key_name                    = "mykeys100"
-  associate_public_ip_address = true
+  associate_public_ip_address  = true
 
   tags = {
     Name = "Git Actions in Action"
@@ -14,7 +14,7 @@ resource "aws_instance" "node1" {
 }
 
 terraform {
-  
+
     backend "s3" {
         bucket = "techbleat-terraform-storage"
         key = "action/dev/terraform.tfstate"
